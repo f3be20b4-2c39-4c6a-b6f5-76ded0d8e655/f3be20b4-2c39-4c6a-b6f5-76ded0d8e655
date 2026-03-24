@@ -2,8 +2,83 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <script>localStorage.setItem("Env","Web");localStorage.setItem("Config","Erandix01");</script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Erandix</title>
 </head>
+<style>
+    body{
+        position: fixed;
+        width:100%;
+        height: 100%;
+        text-align: center;
+        overflow:hidden;
+    }
+    .OffLineMessage{
+       margin-top:25vh;
+    }
+    .Retry{
+        position:relative;
+        width:90%;
+        height:50px;
+        border:none;
+        background: forestgreen;
+        color:white;
+        border-radius: 10px;
+        margin-top:5%;
+    }
+</style>
 <body></body>
 </html>
+
+<script type="module">
+
+    if (localStorage.getItem("Packaged")) {
+
+        ERANDES();
+        
+    } else {
+
+        if (navigator.onLine) {
+
+            import("./index.js").then((module) => {
+
+                if (module.default) {
+
+                    module.default();
+
+                } else if (module.CONNECTION) {
+
+                    module.CONNECTION();
+
+                };
+
+            });
+
+        } else {
+            
+            const BODY=document.querySelector("body");
+
+            BODY.innerHTML=`
+
+                <h1 class="OffLineMessage" >OFFLINE</h1>
+
+                <p>Your offLine Please Check Your Internet Connection.</p>
+
+                <button class="Retry">Retry</button>
+            
+            `;
+
+            const Retry=document.querySelector(".Retry");
+
+            Retry.addEventListener("click",()=>{
+
+                location.reload();
+
+            });
+ 
+        };
+
+    };
+
+</script>
