@@ -2,9 +2,9 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <script>const ROUTECSS=(CODE)=>{const link = document.createElement('link');link.rel = 'stylesheet';link.href = CODE;document.head.appendChild(link);};const ROUTEJS=(CODE)=>{const script = document.createElement('script');script.src = CODE;script.async = true;document.head.appendChild(script);}</script>
-    <script>localStorage.setItem("Env","Dev");localStorage.setItem("Config","Erandix01");</script>
-    <script>ROUTEJS(localStorage.getItem("ERANDIXCONFIG"));ROUTECSS(localStorage.getItem("ERANDIXDESIGN"));</script>
+    <script>const ROUTECSS = (CODE) => {if (CODE.trim().startsWith("http") || CODE.endsWith(".css")) {const link = document.createElement('link');link.rel = 'stylesheet';link.href = CODE;document.head.appendChild(link);} else {const style = document.createElement('style');style.textContent = CODE;document.head.appendChild(style);}};const ROUTEJS = (CODE) => {if (CODE.trim().startsWith("http") || CODE.endsWith(".js")) {const script = document.createElement('script');script.src = CODE;script.async = true;document.head.appendChild(script);} else {const script = document.createElement('script');script.textContent = CODE;document.head.appendChild(script);}};</script>
+   <script>localStorage.setItem("Env","Dev");localStorage.setItem("Config","Erandix01");</script>
+    <script>ROUTEJS(localStorage.getItem("ERANDIXCONFIG"));</script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Erandix</title>
 </head>
