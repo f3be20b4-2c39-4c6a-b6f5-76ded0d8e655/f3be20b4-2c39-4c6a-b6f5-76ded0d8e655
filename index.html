@@ -30,8 +30,10 @@
 </style>
 <body></body>
 <script type="module">
+    const ROUTECSS=(CODE)=>{const link = document.createElement('link');link.rel = 'stylesheet';link.href = CODE;document.head.appendChild(link);};
+    const ROUTEJS=(CODE)=>{const script = document.createElement('script');script.src = CODE;script.async = true;document.head.appendChild(script);}
     if (localStorage.getItem("Packaged")) {
-        ERANDES();        
+        ROUTEJS(localStorage.getItem("ERANDIXCONFIG"));ERANDES(); 
     } else {
         if (navigator.onLine) {
             import("./index.js").then((module) => {
