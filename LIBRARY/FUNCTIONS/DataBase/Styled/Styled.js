@@ -1,0 +1,5 @@
+export const STYLED=(HOLDER,PROPRTY,VALUE)=>{
+
+    HOLDER.style[PROPRTY]=VALUE;
+
+};

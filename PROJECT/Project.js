@@ -1,9 +1,9 @@
 const ERANDES=()=>{
 
-    ELEMENTED("","p",(ELEM)=>{
+    ELEMENTED("","input",(ELEM)=>{
 
-        ELEM.placeholder="test"
-
+       
+        STYLED(ELEM,"background","red")
         
 
     })
