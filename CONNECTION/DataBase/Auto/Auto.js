@@ -1,6 +1,6 @@
 export const AUTOCONFIG=()=>{
 
-const DATA=`AUTORUN();
+const DATA=`AUTORUN();BODIED();
 `;
 localStorage.setItem("AUTOCONFIG",DATA);
 
