@@ -1,4 +1,5 @@
 import { FUNCTIONCONNECTION } from "../LIBRARY/FUNCTIONS/Connection.js";
+import { TEMPLATESCONNECTION } from "../LIBRARY/TEMPLATES/Connection.js";
 import { ERANDIXCONFIG } from "./DataBase/Config/Config.js";
 import { SYNC } from "./DataBase/Sync/Sync.js";
 
@@ -9,5 +10,7 @@ export const CONNECTIONS=()=>{
     FUNCTIONCONNECTION();
 
     SYNC();
+
+    TEMPLATESCONNECTION();
 
 };
