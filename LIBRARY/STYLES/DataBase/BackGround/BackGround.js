@@ -1,0 +1,5 @@
+export const BACKGROUND=(HOLDER,APPEARANCE)=>{
+
+    STYLED(HOLDER,"background",APPEARANCE);
+
+};

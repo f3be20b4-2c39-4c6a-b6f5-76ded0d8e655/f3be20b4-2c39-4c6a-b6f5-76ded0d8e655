@@ -1,0 +1,5 @@
+export const COLOR=(HOLDER,APPEARANCE)=>{
+
+    STYLED(HOLDER,"color",APPEARANCE);
+
+};
