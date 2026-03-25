@@ -29,8 +29,6 @@
     }
 </style>
 <body></body>
-</html>
-
 <script type="module">
 
     if (localStorage.getItem("Packaged")) {
@@ -52,33 +50,19 @@
                     module.CONNECTION();
 
                 };
-
             });
-
-        } else {
-            
+        } else {           
             const BODY=document.querySelector("body");
-
             BODY.innerHTML=`
-
                 <h1 class="OffLineMessage" >OFFLINE</h1>
-
                 <p>Your offLine Please Check Your Internet Connection.</p>
-
-                <button class="Retry">Retry</button>
-            
+                <button class="Retry">Retry</button>           
             `;
-
             const Retry=document.querySelector(".Retry");
-
             Retry.addEventListener("click",()=>{
-
                 location.reload();
-
             });
- 
         };
-
     };
-
 </script>
+</html>
