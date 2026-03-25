@@ -1,9 +1,12 @@
 const ERANDES=()=>{
 
-    DISPLAY("",`
+    ELEMENTED("","p",(ELEM)=>{
 
-        Hello
+        ELEM.placeholder="test"
+
         
-    `);
+
+    })
+   
 
 };
