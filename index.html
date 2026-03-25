@@ -30,25 +30,15 @@
 </style>
 <body></body>
 <script type="module">
-
     if (localStorage.getItem("Packaged")) {
-
-        ERANDES();
-        
+        ERANDES();        
     } else {
-
         if (navigator.onLine) {
-
             import("./index.js").then((module) => {
-
                 if (module.default) {
-
                     module.default();
-
                 } else if (module.CONNECTION) {
-
                     module.CONNECTION();
-
                 };
             });
         } else {           
