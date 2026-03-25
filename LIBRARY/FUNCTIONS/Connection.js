@@ -7,7 +7,7 @@ const DATA=`const ADD=${ADD};
 const DISPLAY=${DISPLAY};
 `;
 
-localStorage.setItem("FUNCTIONS",DATA.replace(/\s+/g, ""));
+localStorage.setItem("FUNCTIONS",DATA);
 
 };
 

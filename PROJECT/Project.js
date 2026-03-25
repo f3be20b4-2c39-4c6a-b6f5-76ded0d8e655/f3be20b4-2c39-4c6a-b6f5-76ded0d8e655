@@ -1,3 +1,9 @@
 const ERANDES=()=>{
 
+    DISPLAY("",`
+
+        Hello
+        
+    `);
+
 };

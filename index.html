@@ -2,7 +2,9 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <script>localStorage.setItem("Env","Web");localStorage.setItem("Config","Erandix01");</script>
+    <script>const ROUTECSS=(CODE)=>{const link = document.createElement('link');link.rel = 'stylesheet';link.href = CODE;document.head.appendChild(link);};const ROUTEJS=(CODE)=>{const script = document.createElement('script');script.src = CODE;script.async = true;document.head.appendChild(script);}</script>
+    <script>localStorage.setItem("Env","Dev");localStorage.setItem("Config","Erandix01");</script>
+    <script>ROUTEJS(localStorage.getItem("ERANDIXCONFIG"));ROUTECSS(localStorage.getItem("ERANDIXDESIGN"));</script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Erandix</title>
 </head>
@@ -29,11 +31,9 @@
     }
 </style>
 <body></body>
-<script type="module">
-    const ROUTECSS=(CODE)=>{const link = document.createElement('link');link.rel = 'stylesheet';link.href = CODE;document.head.appendChild(link);};
-    const ROUTEJS=(CODE)=>{const script = document.createElement('script');script.src = CODE;script.async = true;document.head.appendChild(script);}
+<script defer type="module">
     if (localStorage.getItem("Packaged")) {
-        ROUTEJS(localStorage.getItem("ERANDIXCONFIG"));ERANDES(); 
+        ERANDES(); 
     } else {
         if (navigator.onLine) {
             import("./index.js").then((module) => {
