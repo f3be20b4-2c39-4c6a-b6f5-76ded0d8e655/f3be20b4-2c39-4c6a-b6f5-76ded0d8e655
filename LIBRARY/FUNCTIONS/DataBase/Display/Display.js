@@ -1,4 +1,4 @@
-export const DISPLAY=(ELEMENT,DATA)=>{
+export const DISPLAYED=(ELEMENT,DATA)=>{
 
     CONDITION(ELEMENT,()=>{
       

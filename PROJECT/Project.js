@@ -1,16 +1,11 @@
 const ERANDES=()=>{
 
-    DISPLAY("",`
+    HEADER("",(ELE)=>{
 
-        Text
-        
-    `);
+        RIGHTTEXT(ELE,"","Helo",()=>{
 
-    ELEMENTED("","input",(ELEM)=>{
+        });
 
-       
-        STYLED(ELEM,"background","red")
-        
     });
-   
+    
 };

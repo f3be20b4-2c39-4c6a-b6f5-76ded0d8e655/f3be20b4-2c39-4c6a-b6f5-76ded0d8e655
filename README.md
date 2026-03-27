@@ -1,6 +1,5 @@
 ## Hi there 👋
 
-<!--
 **f3be20b4-2c39-4c6a-b6f5-76ded0d8e655/f3be20b4-2c39-4c6a-b6f5-76ded0d8e655** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
 Here are some ideas to get you started:
@@ -13,4 +12,4 @@ Here are some ideas to get you started:
 - 📫 How to reach me: ...
 - 😄 Pronouns: ...
 - ⚡ Fun fact: ...
--->
+

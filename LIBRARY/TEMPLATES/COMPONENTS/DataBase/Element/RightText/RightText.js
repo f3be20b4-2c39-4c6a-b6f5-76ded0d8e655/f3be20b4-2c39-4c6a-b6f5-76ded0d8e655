@@ -1,0 +1,11 @@
+export const RIGHTTEXT=(HOLDER,TYPE,WORD,CALLBACK)=>{
+
+    TEXT(HOLDER,TYPE,WORD,(ELEMENTS)=>{
+
+        MARGINRIGHT(ELEMENTS,"2%");
+
+        CALLBACK(ELEMENTS);
+
+    });
+
+};

@@ -1,17 +1,15 @@
 export const BODIED=()=>{
 
-    CONDITION(localStorage.getItem("AppColor") === "#000000" ,()=>{
+    APPMODE(BODY);
 
-        BACKGROUND(BODY,"#000000");
+    POSITION(BODY,"fixed");
 
-        COLOR(BODY,"#FFFFFF");
+    PADDING(BODY,"0");
 
-    },()=>{
+    MARGIN(BODY,"0");
 
-        BACKGROUND(BODY,"#FFFFFF");
+    FONTSIZE(BODY,"20px");
 
-        COLOR(BODY,"#000000");
-
-    });
+    FONTFAMILY(BODY,"camberia");
 
 };

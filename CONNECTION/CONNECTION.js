@@ -1,3 +1,4 @@
+import { COMPONENTSCONNECTION } from "../LIBRARY/COMPONENTS/Connection.js";
 import { CONSTANTSCONNECTIONS } from "../LIBRARY/CONSTANTS/Connection.js";
 import { FUNCTIONCONNECTION } from "../LIBRARY/FUNCTIONS/Connection.js";
 import { STYLESCONNECTION } from "../LIBRARY/STYLES/Connection.js";
@@ -19,5 +20,7 @@ export const CONNECTIONS=()=>{
     CONSTANTSCONNECTIONS();
 
     STYLESCONNECTION();
+
+    COMPONENTSCONNECTION();
 
 };

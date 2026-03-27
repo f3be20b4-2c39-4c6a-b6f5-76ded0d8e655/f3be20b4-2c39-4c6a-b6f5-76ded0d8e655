@@ -1,3 +1,4 @@
+import { COMPONENTSTEMPLATES } from "./COMPONENTS/Connection.js";
 import { FUNCTIONTEMPLATES } from "./FUNCTIONS/Connection.js";
 import { SERVERTEMPLATES } from "./SERVER/Connection.js";
 import { STYLESTEMPLATES } from "./STYLES/Connection.js";
@@ -9,5 +10,7 @@ export const TEMPLATESCONNECTION=()=>{
     SERVERTEMPLATES();
 
     FUNCTIONTEMPLATES();
+
+    COMPONENTSTEMPLATES();
 
 };

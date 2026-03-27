@@ -1,0 +1,11 @@
+export const LEFTTEXT=(HOLDER,TYPE,WORD,CALLBACK)=>{
+
+    TEXT(HOLDER,TYPE,WORD,(ELEMENTS)=>{
+
+        MARGINLEFT(ELEMENTS,"2%");
+
+        CALLBACK(ELEMENTS);
+
+    });
+
+};
