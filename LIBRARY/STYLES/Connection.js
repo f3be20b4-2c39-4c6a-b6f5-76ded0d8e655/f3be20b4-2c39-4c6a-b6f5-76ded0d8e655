@@ -9,8 +9,10 @@ import { FONTSIZE } from "./DataBase/FontSize/FontSize.js";
 import { HEIGHT } from "./DataBase/Height/Height.js";
 import { LEFT } from "./DataBase/Left/Left.js";
 import { MARGIN } from "./DataBase/Margin/Margin.js";
+import { MARGINBOTTOM } from "./DataBase/MarginBottom/MarginBottom.js";
 import { MARGINLEFT } from "./DataBase/MarginLeft/MarginLeft.js";
 import { MARGINRIGHT } from "./DataBase/MarginRight/MarginRight.js";
+import { MARGINTOP } from "./DataBase/MarginTop/MarginTop.js";
 import { PADDING } from "./DataBase/Padding/Padding.js";
 import { POSITION } from "./DataBase/Position/Position.js";
 import { RIGHT } from "./DataBase/Right/Right.js";
@@ -37,6 +39,8 @@ const BORDERRADIUS=${BORDERRADIUS};
 const BORDER=${BORDER};
 const MARGINLEFT=${MARGINLEFT};
 const MARGINRIGHT=${MARGINRIGHT};
+const MARGINTOP=${MARGINTOP};
+const MARGINBOTTOM=${MARGINBOTTOM};
 `;
     
 localStorage.setItem("STYLES",DATA);
@@ -44,5 +48,5 @@ localStorage.setItem("STYLES",DATA);
 };
 
 `
-const MARGINRIGHT=${MARGINRIGHT};
+const MARGINBOTTOM=${MARGINBOTTOM};
 `

@@ -1,0 +1,11 @@
+export const MINITITLE=(HOLDER,WORD,CALLBACK)=>{
+
+    TEXT(HOLDER,"h5",WORD,(ELEMENTS)=>{
+
+        FONTSIZE(ELEMENTS,"20px");
+
+        CALLBACK(ELEMENTS);
+
+    });
+
+};

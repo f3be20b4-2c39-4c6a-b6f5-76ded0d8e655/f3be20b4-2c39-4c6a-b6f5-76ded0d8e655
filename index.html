@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <script>const ROUTECSS = (CODE) => {if (CODE.trim().startsWith("http") || CODE.endsWith(".css")) {const link = document.createElement('link');link.rel = 'stylesheet';link.href = CODE;document.head.appendChild(link);} else {const style = document.createElement('style');style.textContent = CODE;document.head.appendChild(style);}};const ROUTEJS = (CODE) => {if (CODE.trim().startsWith("http") || CODE.endsWith(".js")) {const script = document.createElement('script');script.src = CODE;script.async = true;document.head.appendChild(script);} else {const script = document.createElement('script');script.textContent = CODE;document.head.appendChild(script);}};</script>
     <script>localStorage.setItem("Env","Dev");localStorage.setItem("Config","Erandix01");</script>
-    <script type="module">ROUTEJS(localStorage.getItem("ERANDIXCONFIG"));</script>
+    <script type="module">if(localStorage.getItem("Packaged")){ROUTEJS(localStorage.getItem("ERANDIXCONFIG"));}</script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Erandix</title>
 </head>
@@ -35,7 +35,7 @@
     if (localStorage.getItem("Packaged")) {
         ERANDES(); 
     } else {
-        if (navigator.onLine) {
+        if (navigator.onLine && localStorage.getItem("Env") === "Desktop"||"Web"||"Android" ) {
             import("./index.js").then((module) => {
                 if (module.default) {
                     module.default();
@@ -43,17 +43,27 @@
                     module.CONNECTION();
                 };
             });
-        } else {           
-            const BODY=document.querySelector("body");
-            BODY.innerHTML=`
-                <h1 class="OffLineMessage" >OFFLINE</h1>
-                <p>Your offLine Please Check Your Internet Connection.</p>
-                <button class="Retry">Retry</button>           
-            `;
-            const Retry=document.querySelector(".Retry");
-            Retry.addEventListener("click",()=>{
-                location.reload();
-            });
+        } else {    
+            if (localStorage.getItem("Env") === "Dev" ) {
+                import("./index.js").then((module) => {
+                    if (module.default) {
+                        module.default();
+                    } else if (module.CONNECTION) {
+                        module.CONNECTION();
+                    };
+                }); 
+            } else {
+                const BODY=document.querySelector("body");
+                BODY.innerHTML=`
+                    <h1 class="OffLineMessage" >OFFLINE</h1>
+                    <p>Your offLine Please Check Your Internet Connection.</p>
+                    <button class="Retry">Retry</button>           
+                `;
+                const Retry=document.querySelector(".Retry");
+                Retry.addEventListener("click",()=>{
+                    location.reload();
+                });
+            };   
         };
     };
 </script>

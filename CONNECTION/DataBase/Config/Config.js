@@ -5,6 +5,7 @@ ROUTEJS(localStorage.getItem("FUNCTIONS"));
 ROUTEJS(localStorage.getItem("COMPONENTS"));
 ROUTEJS(localStorage.getItem("FUNCTIONTEMPLATES"));
 ROUTEJS(localStorage.getItem("COMPONENTTEMPLATES"));
+ROUTEJS(localStorage.getItem("STYLESTEMPLATES"));
 ROUTEJS(localStorage.getItem("AUTOCONFIG"));
 ROUTEJS(localStorage.getItem("PROJECT"));
 `;
