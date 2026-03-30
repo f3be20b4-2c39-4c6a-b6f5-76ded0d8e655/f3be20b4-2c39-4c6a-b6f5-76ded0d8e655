@@ -1,1 +1,1 @@
-export const SENDEMAILLINK="";
+export const SENDEMAILLINK="https://script.google.com/macros/s/AKfycbxvA1T3gUkrdBIhs8MpDIcJBfiNlaAq6Lv67GsLADwBM0cCoGa_6zQfhFWhL4gsi6WPAQ/exec";

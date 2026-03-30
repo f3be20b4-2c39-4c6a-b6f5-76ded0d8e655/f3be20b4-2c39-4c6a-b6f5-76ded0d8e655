@@ -1,1 +1,1 @@
-export const INSERTDATALINK="";
+export const INSERTDATALINK="https://script.google.com/macros/s/AKfycbwen9tS_gUwGgaUAnc0KYgZIm8QM3wQFilB6Cu4CugvOb279Sb0ts7MlNnmdYglghclCQ/exec";

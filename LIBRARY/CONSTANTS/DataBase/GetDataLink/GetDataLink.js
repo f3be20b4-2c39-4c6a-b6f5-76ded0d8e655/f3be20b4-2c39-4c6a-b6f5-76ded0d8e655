@@ -1,1 +1,1 @@
-export const GETDATABASELINK="";
+export const GETDATABASELINK="https://script.google.com/macros/s/AKfycbwTL-T9YrSrXmJTnALwna4tNiaC7TqfZfwG8EiPID6hIN-BOWgaHFy7XKTW_We9X9c-8A/exec";
