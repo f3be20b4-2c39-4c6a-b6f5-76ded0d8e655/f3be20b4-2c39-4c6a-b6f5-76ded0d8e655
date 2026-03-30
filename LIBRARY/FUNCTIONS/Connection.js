@@ -1,3 +1,4 @@
+import { MERGER } from "../../CONNECTION/DataBase/Merger/Merger.js";
 import { ADD } from "./DataBase/Add/Add.js";
 import { APPMODE } from "./DataBase/AppMode/AppMode.js";
 import { AUTORUN } from "./DataBase/AutoRun/AutoRun.js";
@@ -43,7 +44,7 @@ const FETCH=${FETCH};
 const CHECK=${CHECK};
 `;
 
-localStorage.setItem("FUNCTIONS",DATA);
+MERGER("FUNCTIONS",DATA);
 
 };
 

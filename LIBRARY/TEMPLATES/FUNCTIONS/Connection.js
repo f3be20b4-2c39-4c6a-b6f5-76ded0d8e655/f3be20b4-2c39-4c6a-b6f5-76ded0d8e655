@@ -7,6 +7,7 @@ import { CLEAR } from "./DataBase/Clear/Clear.js";
 import { ONLINECHECKER } from "./DataBase/OnlineChecker/OnlineChecker.js";
 import { TOASTCONDITION } from "./DataBase/ToastCondition/ToastCondition.js";
 import { ACCOUNTCHECKER } from "./DataBase/AccountChecker/AccountChecker.js";
+import { MERGER } from "../../../CONNECTION/DataBase/Merger/Merger.js";
 
 export const FUNCTIONTEMPLATES=()=>{
 
@@ -20,8 +21,8 @@ const ONLINECHECKER=${ONLINECHECKER};
 const TOASTCONDITION=${TOASTCONDITION};
 const ACCOUNTCHECKER=${ACCOUNTCHECKER};
 `;
-    
-localStorage.setItem("FUNCTIONTEMPLATES",DATA);
+
+MERGER("FUNCTIONTEMPLATES",DATA);
 
 };
 

@@ -1,3 +1,4 @@
+import { MERGER } from "../../../CONNECTION/DataBase/Merger/Merger.js";
 import { LEFTTEXT } from "./DataBase/Element/LeftText/LeftText.js";
 import { MINITITLE } from "./DataBase/Element/MiniTitle/MiniTitle.js";
 import { RIGHTTEXT } from "./DataBase/Element/RightText/RightText.js";
@@ -18,9 +19,9 @@ const TEXTS=${TEXTS};
 const HEADERDIVVIEW=${HEADERDIVVIEW};
 const FOOTERDIVVIEW=${FOOTERDIVVIEW};
 `;
-        
-localStorage.setItem("COMPONENTTEMPLATES",DATA);
-    
+
+MERGER("COMPONENTTEMPLATES",DATA);
+         
 };
 
 

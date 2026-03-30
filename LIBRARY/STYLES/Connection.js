@@ -1,3 +1,4 @@
+import { MERGER } from "../../CONNECTION/DataBase/Merger/Merger.js";
 import { BACKGROUND } from "./DataBase/Background/BackGround.js";
 import { BORDER } from "./DataBase/Border/Border.js";
 import { BORDERRADIUS } from "./DataBase/BorderRadius/BoderRadius.js";
@@ -42,9 +43,9 @@ const MARGINRIGHT=${MARGINRIGHT};
 const MARGINTOP=${MARGINTOP};
 const MARGINBOTTOM=${MARGINBOTTOM};
 `;
-    
-localStorage.setItem("STYLES",DATA);
 
+MERGER("STYLES",DATA);
+    
 };
 
 `

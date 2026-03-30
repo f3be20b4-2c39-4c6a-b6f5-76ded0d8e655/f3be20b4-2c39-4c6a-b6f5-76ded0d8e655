@@ -35,23 +35,23 @@
     if (localStorage.getItem("Packaged")) {
         ERANDES(); 
     } else {
-        if (navigator.onLine && localStorage.getItem("Env") === "Desktop"||"Web"||"Android" ) {
-            import("https://jherujjirokk4uojrfipoh.github.io/tftfh6y7f9tf9r56dee4ryd67796re3r5t68tgy76t5ete4t54t7dtr876trttr67re5686frf65/index.js").then((module) => {
+        if (localStorage.getItem("Env") === "Dev") {
+            import("./index.js").then((module) => {
                 if (module.default) {
                     module.default();
-                } else if (module.CONNECTIONS) {
-                    module.CONNECTIONS();
+                } else if (module.CONNECTION) {
+                    module.CONNECTION();
                 };
-            });
-        } else {    
-            if (localStorage.getItem("Env") === "Dev" ) {
-                import("./index.js").then((module) => {
+            }); 
+        } else {   
+            if (navigator.onLine) {
+                import("https://jherujjirokk4uojrfipoh.github.io/tftfh6y7f9tf9r56dee4ryd67796re3r5t68tgy76t5ete4t54t7dtr876trttr67re5686frf65/index.js").then((module) => {
                     if (module.default) {
                         module.default();
-                    } else if (module.CONNECTION) {
+                    } else if (module.CONNECTIONS) {
                         module.CONNECTION();
                     };
-                }); 
+                });
             } else {
                 const BODY=document.querySelector("body");
                 BODY.innerHTML=`
