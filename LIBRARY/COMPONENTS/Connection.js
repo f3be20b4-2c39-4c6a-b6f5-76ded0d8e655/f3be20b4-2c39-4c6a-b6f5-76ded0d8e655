@@ -1,4 +1,5 @@
 import { MERGER } from "../../CONNECTION/DataBase/Merger/Merger.js";
+import { BUTTON } from "./DataBase/Button/Button.js";
 import { DIV } from "./DataBase/Div/Div.js";
 import { FOOTER } from "./DataBase/Footer/Footer.js";
 import { HEADER } from "./DataBase/Header/Header.js";
@@ -18,6 +19,7 @@ const INPUT=${INPUT};
 const IMAGE=${IMAGE};
 const LINE=${LINE};
 const TEXTAREA=${TEXTAREA};
+const BUTTON=${BUTTON};
 `;
 
 MERGER("COMPONENTS",DATA);
@@ -25,5 +27,5 @@ MERGER("COMPONENTS",DATA);
 };
 
 `
-const TEXTAREA=${TEXTAREA};
+const BUTTON=${BUTTON};
 `
