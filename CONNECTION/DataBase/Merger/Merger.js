@@ -8,6 +8,8 @@ export const MERGER=(NAME,DATA)=>{
         
     }else{
 
+        localStorage.setItem(NAME,DATA);
+
     };
 
 };
