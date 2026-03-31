@@ -1,7 +1,7 @@
 const ERANDES=()=>{
 
-    FOOTERDIVVIEW(()=>{
-
+    TEXTAREA("","Compose A Message","Message",()=>{
+        
     });
 
 };
