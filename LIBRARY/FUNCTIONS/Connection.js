@@ -15,6 +15,7 @@ import { PLACEHOLDER } from "./DataBase/PlaceHolder/PlaceHolder.js";
 import { ROUTE } from "./DataBase/Route/Route.js";
 import { SESSIONDELETE } from "./DataBase/SessionDelete/SessionDelete.js";
 import { SESSIONSTORE } from "./DataBase/SessionStore/SessionStore.js";
+import { SOURCED } from "./DataBase/Sourced/Sourced.js";
 import { STYLED } from "./DataBase/Styled/Styled.js";
 import { TYPE } from "./DataBase/Type/Type.js";
 import { WEBKIT } from "./DataBase/WebKit/WebKit.js";
@@ -42,6 +43,7 @@ const ZOOM=${ZOOM};
 const ROUTE=${ROUTE};
 const FETCH=${FETCH};
 const CHECK=${CHECK};
+const SOURCED=${SOURCED};
 `;
 
 MERGER("FUNCTIONS",DATA);
@@ -49,5 +51,5 @@ MERGER("FUNCTIONS",DATA);
 };
 
 `
-const CHECK=${CHECK};
+const SOURCED=${SOURCED};
 `
