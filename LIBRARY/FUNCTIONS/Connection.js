@@ -12,6 +12,7 @@ import { FUNCTIONED } from "./DataBase/Functioned/Functioned.js";
 import { LOCALDELETE } from "./DataBase/LocalDelete/LocalDelete.js";
 import { LOCALSTORE } from "./DataBase/LocalStore/LocalStore.js";
 import { PLACEHOLDER } from "./DataBase/PlaceHolder/PlaceHolder.js";
+import { REDUX } from "./DataBase/Redux/Redux.js";
 import { ROUTE } from "./DataBase/Route/Route.js";
 import { SESSIONDELETE } from "./DataBase/SessionDelete/SessionDelete.js";
 import { SESSIONSTORE } from "./DataBase/SessionStore/SessionStore.js";
@@ -44,6 +45,7 @@ const ROUTE=${ROUTE};
 const FETCH=${FETCH};
 const CHECK=${CHECK};
 const SOURCED=${SOURCED};
+const REDUX=${REDUX};
 `;
 
 MERGER("FUNCTIONS",DATA);
@@ -51,5 +53,5 @@ MERGER("FUNCTIONS",DATA);
 };
 
 `
-const SOURCED=${SOURCED};
+const REDUX=${REDUX};
 `
