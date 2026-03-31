@@ -8,6 +8,7 @@ import { ONLINECHECKER } from "./DataBase/OnlineChecker/OnlineChecker.js";
 import { TOASTCONDITION } from "./DataBase/ToastCondition/ToastCondition.js";
 import { ACCOUNTCHECKER } from "./DataBase/AccountChecker/AccountChecker.js";
 import { MERGER } from "../../../CONNECTION/DataBase/Merger/Merger.js";
+import { GETDATA } from "./DataBase/GetData/GetData.js";
 
 export const FUNCTIONTEMPLATES=()=>{
 
@@ -20,6 +21,7 @@ const CLEAR=${CLEAR};
 const ONLINECHECKER=${ONLINECHECKER};
 const TOASTCONDITION=${TOASTCONDITION};
 const ACCOUNTCHECKER=${ACCOUNTCHECKER};
+const GETDATA=${GETDATA};
 `;
 
 MERGER("FUNCTIONTEMPLATES",DATA);
@@ -27,5 +29,5 @@ MERGER("FUNCTIONTEMPLATES",DATA);
 };
 
 `
-const ACCOUNTCHECKER=${ACCOUNTCHECKER};
+const GETDATA=${GETDATA};
 `
