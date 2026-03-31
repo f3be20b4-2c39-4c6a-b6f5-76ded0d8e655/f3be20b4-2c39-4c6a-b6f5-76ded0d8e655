@@ -1,3 +1,4 @@
+import { MERGER } from "../../../CONNECTION/DataBase/Merger/Merger.js";
 import { DISPLAYBLOCK } from "./DataBase/DisplayBlock/DisplayBlock.js";
 import { DISPLAYFLEX } from "./DataBase/DisplayFlex/DisplayFlex.js";
 import { DISPLAYINLINEFLEX } from "./DataBase/DisplayInflex/DisplayInflex.js";
@@ -22,9 +23,9 @@ const DISPLAYINLINEBLOCK=${DISPLAYINLINEBLOCK};
 const DISPLAYTABLE=${DISPLAYTABLE};
 const DISPLAYINLINETABLE=${DISPLAYINLINETABLE};
 `;
+
+MERGER("STYLESTEMPLATES",DATA);
         
-localStorage.setItem("STYLESTEMPLATES",DATA);
-    
 };
 
 `

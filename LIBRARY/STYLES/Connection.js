@@ -14,6 +14,7 @@ import { MARGINBOTTOM } from "./DataBase/MarginBottom/MarginBottom.js";
 import { MARGINLEFT } from "./DataBase/MarginLeft/MarginLeft.js";
 import { MARGINRIGHT } from "./DataBase/MarginRight/MarginRight.js";
 import { MARGINTOP } from "./DataBase/MarginTop/MarginTop.js";
+import { OVERFLOW } from "./DataBase/OverFlow/OverFlow.js";
 import { PADDING } from "./DataBase/Padding/Padding.js";
 import { POSITION } from "./DataBase/Position/Position.js";
 import { RIGHT } from "./DataBase/Right/Right.js";
@@ -42,6 +43,7 @@ const MARGINLEFT=${MARGINLEFT};
 const MARGINRIGHT=${MARGINRIGHT};
 const MARGINTOP=${MARGINTOP};
 const MARGINBOTTOM=${MARGINBOTTOM};
+const OVERFLOW=${OVERFLOW};
 `;
 
 MERGER("STYLES",DATA);
@@ -49,5 +51,5 @@ MERGER("STYLES",DATA);
 };
 
 `
-const MARGINBOTTOM=${MARGINBOTTOM};
+const OVERFLOW=${OVERFLOW};
 `
